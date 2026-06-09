@@ -1,0 +1,17 @@
+set shell := ["bash", "-uc"]
+
+deck := "presentation.md"
+config_home := ".config"
+config := ".config/presenterm/config.yaml"
+image_protocol := env_var_or_default("PRESENTERM_IMAGE_PROTOCOL", "auto")
+
+present:
+    XDG_CONFIG_HOME={{config_home}} presenterm -x --config-file {{config}} --image-protocol {{image_protocol}} {{deck}}
+
+check:
+    markdownlint --config .markdownlint.yaml {{deck}}
+    mmdc --version
+    XDG_CONFIG_HOME={{config_home}} presenterm --config-file {{config}} --current-theme
+    presenterm --list-comment-commands
+    rg --fixed-strings --quiet '```mermaid +render' {{deck}}
+    rg --fixed-strings --quiet "<!-- end_slide -->" {{deck}}

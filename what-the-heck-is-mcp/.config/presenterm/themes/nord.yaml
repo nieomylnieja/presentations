@@ -1,0 +1,64 @@
+extends: dark
+
+default:
+  colors:
+    foreground: "eceff4"
+    background: "2e3440"
+
+palette:
+  colors:
+    polar_night_0: "2e3440"
+    polar_night_1: "3b4252"
+    polar_night_2: "434c5e"
+    polar_night_3: "4c566a"
+    snow_storm_0: "d8dee9"
+    snow_storm_1: "e5e9f0"
+    snow_storm_2: "eceff4"
+    frost_0: "8fbcbb"
+    frost_1: "88c0d0"
+    frost_2: "81a1c1"
+    frost_3: "5e81ac"
+    red: "bf616a"
+    orange: "d08770"
+    yellow: "ebcb8b"
+    green: "a3be8c"
+    purple: "b48ead"
+
+intro_slide:
+  title:
+    alignment: center
+    font_size: 3
+    colors:
+      foreground: "88c0d0"
+  author:
+    positioning: below_title
+    colors:
+      foreground: "d8dee9"
+
+slide_title:
+  padding_bottom: 1
+  colors:
+    foreground: "88c0d0"
+
+headings:
+  h1:
+    colors:
+      foreground: "88c0d0"
+  h2:
+    colors:
+      foreground: "81a1c1"
+  h3:
+    colors:
+      foreground: "8fbcbb"
+
+block_quote:
+  colors:
+    foreground: "d8dee9"
+    background: "3b4252"
+
+mermaid:
+  background: transparent
+  theme: dark
+
+code:
+  alignment: left
