@@ -1,7 +1,7 @@
 ---
 title: What the heck is MCP?
 author: Mateusz Hawrus
-date: 2026-06-09
+date: 2026-06-10
 ---
 
 # What the heck is MCP?
